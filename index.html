@@ -23,30 +23,37 @@
                     </figure>
                     <div class="card-body">
                       <h2 class="card-title">Triangle</h2>
-                      <p class="text-center">Area = 0.5 x b x h</p>
+                      <p class="text-center text-3xl">Area = 0.5 x b x h</p>
                         <div class="">
                             <input id="triangle-base" type="text" class="w-24 text-2xl p-2 rounded-sm" placeholder="b">
                             <span class="mr-4 ml-4">cm</span>
                             <input id="triangle-height" type="text" class="w-24 text-2xl p-2 rounded-sm" name="" id="" placeholder="h">
                             <span>cm</span>
                         </div>
+                        <div>
+                            <p class="text-2xl">Area: <span id="triangle-area"></span><span>cm <sup>2</sup></span></p>
+                        </div>
                       <div class="card-actions">
                         <button onclick="calculateTriangleArea()" class="btn btn-primary w-full">Calculate</button>
                       </div>
                     </div>
                   </div>
-                <!-- Triangle -->
+                <!-- Rectangle -->
                 <div class="card bg-base-100 w-96 shadow-xl">
                     <figure>
                       <img
-                        src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                        src="/images/rectangle.png"
                         alt="Shoes" />
                     </figure>
                     <div class="card-body">
-                      <h2 class="card-title">Shoes!</h2>
-                      <p>If a dog chews shoes whose shoes does he choose?</p>
+                      <h2 class="card-title">Rectangle</h2>
+                      <p>Area (A) =w x l</p>
+                      <div class="flex">
+                        <input type="text" class="w-24 text-2xl p-2 rounded-sm" placeholder="length" id=""><span class="ml-2 mr-4">cm</span>
+                        <input type="text" class="w-24 text-2xl p-2 rounded-sm" placeholder="width"  id=""><span>cm</span>
+                      </div>
                       <div class="card-actions justify-end">
-                        <button class="btn btn-primary">Buy Now</button>
+                        <button class="btn btn-primary">Calculate</button>
                       </div>
                     </div>
                   </div>
