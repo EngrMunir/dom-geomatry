@@ -7,25 +7,31 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="m-4">
     <header></header>
     <main>
         <!-- main content container -->
-         <div>
+         <div class="flex flex-col lg:flex-row">
             <!-- shape card container -->
-             <div>
+             <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cosl-3">
                 <!-- Triangle -->
                 <div class="card bg-base-100 w-96 shadow-xl">
                     <figure>
                       <img
-                        src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                        src="images/triangle.png"
                         alt="Shoes" />
                     </figure>
                     <div class="card-body">
-                      <h2 class="card-title">Shoes!</h2>
-                      <p>If a dog chews shoes whose shoes does he choose?</p>
-                      <div class="card-actions justify-end">
-                        <button class="btn btn-primary">Buy Now</button>
+                      <h2 class="card-title">Triangle</h2>
+                      <p class="text-center">Area = 0.5 x b x h</p>
+                        <div class="">
+                            <input id="triangle-base" type="text" class="w-24 text-2xl p-2 rounded-sm" placeholder="b">
+                            <span class="mr-4 ml-4">cm</span>
+                            <input id="triangle-height" type="text" class="w-24 text-2xl p-2 rounded-sm" name="" id="" placeholder="h">
+                            <span>cm</span>
+                        </div>
+                      <div class="card-actions">
+                        <button onclick="calculateTriangleArea()" class="btn btn-primary w-full">Calculate</button>
                       </div>
                     </div>
                   </div>
@@ -77,10 +83,11 @@
 
              </div>
              <!-- area calculation container -->
-              <div class="w-96">
-                    <h3 class="text-3xl">Area calculation</h3>
+              <div class="w-96 border-2 border-gray-700 rounded-md">
+                    <h3 class="text-3xl text-center p-4">Area calculation</h3>
               </div>
          </div>
     </main>
+    <script src="scripts/triangle-calculate.js"></script>
 </body>
 </html>
